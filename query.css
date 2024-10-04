@@ -1,0 +1,85 @@
+/*BELOW 980px (Tablets)/*
+/*****************************************************/
+/* @media (max-width: 61em) {
+  html { */
+/* 8px/16px=0.5=50% */
+/* font-size: 50%;
+  }
+  .main-section {
+    display: inline-block;
+  }
+
+  .second-star,
+  .third-star {
+    position: relative;
+    left: 0rem;
+  }
+  .third-star {
+    margin-bottom: 5rem;
+  }
+  .second-section {
+    align-items: center;
+  }
+  .second-section-two {
+    display: inline;
+  }
+} */
+
+@media (max-width: 61em) {
+  html {
+    font-size: 50%;
+  }
+  .main-section {
+    display: inline-block;
+  }
+  .second-section {
+    align-items: center;
+  }
+  .second-section-two {
+    display: inline;
+  }
+
+  .second-star,
+  .third-star {
+    position: relative;
+    left: 0rem;
+  }
+
+  .first-star,
+  .second-star,
+  .third-star {
+    width: 100%; /* Ensure all stars have the same width */
+    max-width: 100%; /* Remove any constraints */
+    position: static; /* Remove relative positioning */
+    margin: 0 auto; /* Center the divs */
+    flex: 1 1 0; /* Ensure they flex to the same width */
+  }
+  .third-star {
+    margin-bottom: 5rem;
+  }
+
+  .second-section {
+    display: flex;
+    gap: 2rem; /* Gap between stars */
+    width: 45rem;
+    color: hsl(300, 43%, 22%);
+    align-items: center; /* Vertically center stars */
+    flex-direction: column;
+  }
+  .first-star,
+  .second-star,
+  .third-star {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    padding: 1.5rem 4rem;
+    gap: 3rem;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  .stars > img {
+    margin: 0.2rem;
+  }
+}
